@@ -27,6 +27,7 @@
         "jms/serializer-bundle": "^2.0",
         "knplabs/gaufrette": "^0.8",
         "knplabs/knp-gaufrette-bundle": "^0.7",
+        "marcj/topsort": "^0.1",
         "swiftmailer/swiftmailer": "^6.0",
         "sylius/addressing-bundle": "^1.6",
         "sylius/attribute-bundle": "^1.6",

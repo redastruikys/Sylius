@@ -1,0 +1,4 @@
+doctrine_migrations:
+    services:
+        'Doctrine\Migrations\Version\MigrationFactory': 'Sylius\Bundle\CoreBundle\Migrations\Utility\ContainerAwareVersionFactory'
+        'Doctrine\Migrations\Version\Comparator': 'Sylius\Bundle\CoreBundle\Migrations\Utility\TopologyBasedVersionComparator'

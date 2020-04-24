@@ -51,6 +51,7 @@ final class Configuration implements ConfigurationInterface
         ;
 
         $this->addResourcesSection($rootNode);
+        $this->addMigrationsSection($rootNode);
 
         return $treeBuilder;
     }
@@ -159,6 +160,18 @@ final class Configuration implements ConfigurationInterface
                     ->end()
                 ->end()
             ->end()
+        ;
+    }
+
+    private function addMigrationsSection(ArrayNodeDefinition $node): void
+    {
+        $node
+            ->children()
+                ->arrayNode('migrations')
+                    ->useAttributeAsKey('subject')
+                    ->arrayPrototype()
+                        ->performNoDeepMerging()
+                        ->scalarPrototype()
         ;
     }
 }

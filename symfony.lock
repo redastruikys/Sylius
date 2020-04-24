@@ -31,6 +31,9 @@
             "config/packages/lexik_jwt_authentication.yaml"
         ]
     },
+    "marcj/topsort": {
+        "version": "0.1"
+    },
     "namshi/jose": {
         "version": "7.2.3"
     },
